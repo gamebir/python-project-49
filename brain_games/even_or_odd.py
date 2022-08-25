@@ -2,47 +2,47 @@ from random import randint
 import prompt
 
 
-# проверка на четность
-def even(value):
-    return True if not value % 2 else False
+def is_even(value):
+    return bool(value % 2 )
+    """проверка на четность"""
 
 
-# проверка ответа
 def games(question, answer):
-    if even(question) is True and answer == "yes":
+    if not is_even(question) and answer == "yes":
         return True
-    elif even(question) is False and answer == "no":
+    elif is_even(question) and answer == "no":
         return True
-    elif even(question) is True and answer == "no":
+    elif not is_even(question) and answer == "no":
         return False
-    elif even(question) is False and answer == "yes":
+    elif is_even(question) and answer == "yes":
         return False
+        """проверка ответа"""
 
 
-# переворачиваем ответ
 def rev(answer):
     return "no" if answer == "yes" else "yes"
+    """переворачиваем ответ"""
 
 
-# диалог
 def greeting():
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name?\n ")
     print(f"Hello, {name}")
-    print("""Answer "yes" if the number is even, otherwise answer "no".""")
+    print('Answer "yes" if the number is even, otherwise answer "no".')
+    MAX_COUNT = 3
     count = 0
-    while count < 3:
+    while count < MAX_COUNT:
         question = randint(1, 10)
         print(f"Question: {question}")
         answer = input()
         if answer == "yes" or answer == "no":
-            if games(question, answer) is True:
+            if games(question, answer):
                 print(f"Your answer: {answer}\nCorrect!")
                 count += 1
             else:
-                print(f"{answer} is wrong answer ;(. Correct answer/"
-                    "was {rev(answer)}.\nLet's try again, {name}")
+                print(f"{answer} is wrong answer ;(. Correct answer was {rev(answer)}.\nLet's try again, {name}")
                 break
             print(f"Congratulations, {name}!")
         else:
             break
+greeting()
