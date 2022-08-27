@@ -1,9 +1,9 @@
 from random import randint
-import prompt
+from brain_games.games_dialog import greeting, rev
 
 
 def is_even(value):
-    return bool(value % 2 )
+    return bool(value % 2)
     """проверка на четность"""
 
 
@@ -19,15 +19,8 @@ def games(question, answer):
         """проверка ответа"""
 
 
-def rev(answer):
-    return "no" if answer == "yes" else "yes"
-    """переворачиваем ответ"""
-
-
-def greeting():
-    print("Welcome to the Brain Games!")
-    name = prompt.string("May I have your name?\n ")
-    print(f"Hello, {name}")
+def even():
+    name = greeting()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     MAX_COUNT = 3
     count = 0
@@ -45,4 +38,3 @@ def greeting():
             print(f"Congratulations, {name}!")
         else:
             break
-greeting()

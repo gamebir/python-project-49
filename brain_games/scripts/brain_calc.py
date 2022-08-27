@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 
-from brain_games.games.even_or_odd import even, greeting
+
+from brain_games.games.calc import calc
 
 
 def main():
-    even()
+    calc()
 
 
 if __name__ == "__main__":
