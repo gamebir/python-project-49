@@ -2,19 +2,19 @@ from random import randint
 from brain_games.games_dialog import greeting, rev
 
 
-def is_even(value):
+def is_odd(value):
     return bool(value % 2)
     """проверка на четность"""
 
 
 def games(question, answer):
-    if not is_even(question) and answer == "yes":
+    if not is_odd(question) and answer == "yes":
         return True
-    elif is_even(question) and answer == "no":
+    elif is_odd(question) and answer == "no":
         return True
-    elif not is_even(question) and answer == "no":
+    elif not is_odd(question) and answer == "no":
         return False
-    elif is_even(question) and answer == "yes":
+    elif is_odd(question) and answer == "yes":
         return False
         """проверка ответа"""
 
@@ -33,7 +33,9 @@ def even():
                 print(f"Your answer: {answer}\nCorrect!")
                 count += 1
             else:
-                print(f"{answer} is wrong answer ;(. Correct answer was {rev(answer)}.\nLet's try again, {name}")
+                print(
+                    f"{answer} is wrong answer ;(. Correct answer was {rev(answer)}.\nLet's try again, {name}"
+                )
                 break
             print(f"Congratulations, {name}!")
         else:
