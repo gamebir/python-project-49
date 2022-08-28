@@ -28,7 +28,7 @@ def even():
         question = randint(1, 10)
         print(f"Question: {question}")
         answer = input()
-        if answer == "yes" or answer == "no":
+        if answer in ("yes", "no"):
             if games(question, answer):
                 print(f"Your answer: {answer}\nCorrect!")
                 count += 1
