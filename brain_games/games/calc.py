@@ -18,7 +18,9 @@ def calc():
             print("Correct!")
             count += 1
         else:
-            print(f"{answer} is wrong answer ;(. Correct answer was {question}.\nLet's try again, {name}")
+            print(
+                f"{answer} is wrong answer ;(. Correct answer was {question}.\nLet's try again, {name}"
+            )
             break
     if count == MAX_COUNT:
         print(f"Congratulations, {name}")

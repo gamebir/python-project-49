@@ -23,3 +23,18 @@ def math_action(number1, number2, oper):
     elif oper == "*":
         question = number1 * number2
     return question
+    """Присваеваем символу математическую операцию"""
+
+
+def div(number):
+    list_div = []
+    for i in range(1, number + 1):
+        if number % i == 0:
+            list_div.append(i)
+    return list_div
+    """список делителей"""
+
+
+def gr_com_div(list_div1, list_div2):
+    return max(set(list_div1) & set(list_div2))
+    """поиск наибольшего общего делителя"""
