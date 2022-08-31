@@ -1,17 +1,16 @@
 from random import randint
-from brain_games.games_dialog import div, gr_com_div, greeting
+from brain_games.games_dialog import div, gr_com_div, greeting, is_digit
 
 
-def brain_gcd():
+def brain_gcd(MAX_COuNT = 3):
     name = greeting()
     print("Find the greatest common divisor of given numbers.")
-    MAX_COuNT = 3
     count = 0
     while count < MAX_COuNT:
         number1 = randint(1, 100)
         number2 = randint(1, 100)
         print(f"Question: {number1} {number2}")
-        answer = int(input("Your answer:"))
+        answer = is_digit("Your answer:")
         if answer == gr_com_div(div(number1), div(number2)):
             print("Correct!")
             count += 1
