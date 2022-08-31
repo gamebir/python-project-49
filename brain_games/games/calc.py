@@ -2,8 +2,8 @@ from random import randint, choice
 from brain_games.games_dialog import greeting, is_digit, math_action
 
 
-def calc(MAX_COUNT = 3):
-    name = greeting()    
+def calc(MAX_COUNT=3):
+    name = greeting()
     count = 0
     print("What is the result of the expression?")
     while count < MAX_COUNT:

@@ -2,7 +2,6 @@ from random import randint
 from brain_games.games_dialog import greeting, rev
 
 
-
 def is_odd(value):
     return bool(value % 2)
     """проверка на четность"""
@@ -20,7 +19,7 @@ def games(question, answer):
         """проверка ответа"""
 
 
-def even(MAX_COUNT = 3):
+def even(MAX_COUNT=3):
     name = greeting()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     count = 0
