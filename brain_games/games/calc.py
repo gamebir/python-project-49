@@ -1,5 +1,5 @@
 from random import randint, choice
-from brain_games.games_dialog import greeting, is_digit, math_action
+from brain_games.games_functions import greeting, is_digit, math_action
 
 
 def calc(MAX_COUNT=3):
@@ -10,7 +10,7 @@ def calc(MAX_COUNT=3):
         oper = choice(["+", "-", "*"])
         number1 = randint(1, 10)
         number2 = randint(1, 10)
-        print(f"Question:{number1} {oper} {number2}")
+        print(f"Question: {number1} {oper} {number2}")
         answer = is_digit("Your answer: ")
         question = math_action(number1, number2, oper)
         if question == answer:

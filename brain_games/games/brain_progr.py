@@ -1,5 +1,5 @@
-from random import randint, choice
-from brain_games.games_dialog import gen_prog, greeting, is_digit
+from random import choice
+from brain_games.games_functions import gen_prog, greeting, is_digit
 
 
 def brain_progr(MAX_COUNT=3):

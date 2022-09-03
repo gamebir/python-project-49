@@ -54,3 +54,25 @@ def gen_prog(step=3):
     for i in range(n, n + (step * 10), step):
         result += f"{i} "
     return result
+
+
+def is_prime_number(number):
+    """проверяем является ли число простым"""
+    result = []
+    for i in range(1, number + 1):
+        if number % i == 0:
+            result.append(i)
+    return True if result == [1, number] else False
+
+
+def chech_answer(question, answer):
+    """проверка ответа"""
+    if question and answer == "yes" or not question and answer == "no":
+        return True
+    elif not question and answer == "yes" or question and answer == "no":
+        return False
+
+
+def is_even(value):
+    """проверка на четность"""
+    return not bool(value % 2)
