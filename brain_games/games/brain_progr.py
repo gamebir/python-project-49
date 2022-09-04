@@ -18,7 +18,7 @@ def brain_progr(MAX_COUNT=3):
         else:
             print(
                 f"{answer} is wrong answer ;(. Correct answer was {simbol}."
-                f"\nLet's try again, {name}"
+                f"\nLet's try again, {name}!"
             )
             break
     if MAX_COUNT == count:

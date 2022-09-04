@@ -19,7 +19,7 @@ def calc(MAX_COUNT=3):
         else:
             print(
                 f"{answer} is wrong answer ;(. Correct answer was {question}."
-                f"\nLet's try again, {name}"
+                f"\nLet's try again, {name}!"
             )
             break
     if count == MAX_COUNT:

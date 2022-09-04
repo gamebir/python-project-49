@@ -18,7 +18,7 @@ def brain_gcd(MAX_COUNT=3):
             print(
                 f"{answer} is wrong answer ;(. Correct answer was "
                 f"{gr_com_div(div(number1), div(number2))}. "
-                f"Let's try again, {name}"
+                f"Let's try again, {name}!"
             )
             break
     if count == MAX_COUNT:

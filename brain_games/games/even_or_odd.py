@@ -19,7 +19,7 @@ def even(MAX_COUNT=3):
             else:
                 print(
                     f""""{answer}"is wrong answer ;(. Correct answer was """
-                    f""""{rev(answer)}".\nLet's try again, {name}"""
+                    f""""{rev(answer)}".\nLet's try again, {name}!"""
                 )
                 break
         else:
