@@ -1,8 +1,10 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "The program contains 5 games"
+classifiers = []
 authors = ["Egor Kalinovskiy <gamebirbibi@yandex.ru>"]
+repository = "https://github.com/gamebir/python-project-49.git"
 packages = [
   { include = "brain_games" },
 ]
