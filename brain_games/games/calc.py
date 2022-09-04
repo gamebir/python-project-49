@@ -1,5 +1,5 @@
 from random import randint, choice
-from brain_games.games_functions import greeting, is_digit, math_action
+from brain_games.games_functions import greeting, math_action
 
 
 def calc(MAX_COUNT=3):
