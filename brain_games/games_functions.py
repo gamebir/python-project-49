@@ -5,7 +5,7 @@ from random import randint
 def greeting():
     """приветствие"""
     print("Welcome to the Brain Games!")
-    name = prompt.string("May I have your name?\n ")
+    name = prompt.string("May I have your name?\n")
     print(f"Hello, {name}")
     return name
 

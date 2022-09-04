@@ -11,7 +11,7 @@ def calc(MAX_COUNT=3):
         number1 = randint(1, 10)
         number2 = randint(1, 10)
         print(f"Question: {number1} {oper} {number2}")
-        answer = int(is_digit("Your answer: "))
+        answer = int(input("Your answer: "))
         question = math_action(number1, number2, oper)
         if question == answer:
             print("Correct!")
