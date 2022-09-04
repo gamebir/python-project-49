@@ -23,4 +23,4 @@ def calc(MAX_COUNT=3):
             )
             break
     if count == MAX_COUNT:
-        print(f"Congratulations, {name}")
+        print(f"Congratulations, {name}!")

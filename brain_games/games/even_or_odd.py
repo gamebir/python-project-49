@@ -25,4 +25,4 @@ def even(MAX_COUNT=3):
         else:
             break
     if count == MAX_COUNT:
-        print(f"Congratulations, {name}")
+        print(f"Congratulations, {name}!")

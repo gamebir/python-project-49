@@ -22,4 +22,4 @@ def brain_progr(MAX_COUNT=3):
             )
             break
     if MAX_COUNT == count:
-        print(f"Congratulations, {name}")
+        print(f"Congratulations, {name}!")
