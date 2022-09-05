@@ -1,19 +1,21 @@
 from random import randint
 import prompt
-from brain_games.games_functions import chech_answer, greeting, is_even, rev
+from brain_games.games_functions import chec_answer, greeting, is_even, rev
+
+MAX_COUNT = 3
 
 
-def even(MAX_COUNT=3):
+def even(max_count=MAX_COUNT):
     name = greeting()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     count = 0
-    while count < MAX_COUNT:
+    while count < max_count:
         question = randint(1, 10)
         print(f"Question: {question}")
         question = is_even(question)
         answer = prompt.string("Your answer: ")
         if answer in ("yes", "no"):
-            if chech_answer(question, answer):
+            if chec_answer(question, answer):
                 print("Correct!")
                 count += 1
             else:

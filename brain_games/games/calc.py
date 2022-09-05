@@ -2,11 +2,14 @@ from random import randint, choice
 from brain_games.games_functions import greeting, math_action
 
 
-def calc(MAX_COUNT=3):
+MAX_COUNT = 3
+
+
+def calc(max_count=MAX_COUNT):
     name = greeting()
     count = 0
     print("What is the result of the expression?")
-    while count < MAX_COUNT:
+    while count < max_count:
         oper = choice(["+", "-", "*"])
         number1 = randint(1, 10)
         number2 = randint(1, 10)

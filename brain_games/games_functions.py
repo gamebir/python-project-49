@@ -65,7 +65,7 @@ def is_prime_number(number):
     return True if result == [1, number] else False
 
 
-def chech_answer(question, answer):
+def chec_answer(question, answer):
     """проверка ответа"""
     if question and answer == "yes" or not question and answer == "no":
         return True

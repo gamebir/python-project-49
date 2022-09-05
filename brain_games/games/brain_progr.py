@@ -2,11 +2,14 @@ from random import choice
 from brain_games.games_functions import gen_prog, greeting, is_digit
 
 
-def brain_progr(MAX_COUNT=3):
+MAX_COUNT = 3
+
+
+def brain_progr(max_count=MAX_COUNT):
     name = greeting()
     print("What number is missing in the progression?")
     count = 0
-    while count < MAX_COUNT:
+    while count < max_count:
         prog = gen_prog()
         simbol = choice(prog.split())
         question = prog.replace(simbol, "..")
