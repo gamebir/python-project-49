@@ -4,7 +4,7 @@
 code climat:
 <a href="https://codeclimate.com/github/gamebir/python-project-49/maintainability"><img 
 src="https://api.codeclimate.com/v1/badges/3e4e3068f6e9e0933acf/maintainability" /></a>
-<a>Проект содержит 5 игр:</a>
+<div><a>Проект содержит 5 игр:</a></div>
 <div><a href="https://asciinema.org/a/m5qqjlvXt8AQdJ1zezqifAGrf">№ 1 Игра: "Проверка на чётность" </a></div>
 <div><a href="https://asciinema.org/a/Q1qxAFdeVFLORccFL0dVWTHhf">№ 2 Игра: "Калькулятор"</a></div>
 <div><a href="https://asciinema.org/a/doV2201d3fJnQ4vOAbzTSXzXZ">№ 3 Игра "НОД"</a></div>
