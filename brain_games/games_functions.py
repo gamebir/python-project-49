@@ -3,20 +3,15 @@ from random import randint
 
 
 def greeting():
-    """приветствие"""
+    """greeting"""
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name?\n")
     print(f"Hello, {name}")
     return name
 
 
-def rev(answer):
-    """переворачиваем ответ"""
-    return "no" if answer == "yes" else "yes"
-
-
 def math_action(number1, number2, oper):
-    """Присваеваем символу математическую операцию"""
+    """assign a mathematical operation to the symbol"""
     question = 0
     if oper == "+":
         question = number1 + number2
@@ -28,7 +23,7 @@ def math_action(number1, number2, oper):
 
 
 def div(number):
-    """список делителей"""
+    """list of divisors"""
     list_div = []
     for i in range(1, number + 1):
         if number % i == 0:
@@ -37,18 +32,12 @@ def div(number):
 
 
 def gr_com_div(list_div1, list_div2):
-    """поиск наибольшего общего делителя"""
+    """finding the greatest common divisor"""
     return max(set(list_div1) & set(list_div2))
 
 
-def is_digit(text):
-    """проверка на число"""
-    value = input(text)
-    return int(value) if value.isdigit() else is_digit(text)
-
-
 def gen_prog(step=3):
-    """генерируем последовательность"""
+    """generating a sequence"""
     result = ""
     n = randint(0, 100)
     for i in range(n, n + (step * 10), step):
@@ -57,22 +46,34 @@ def gen_prog(step=3):
 
 
 def is_prime_number(number):
-    """проверяем является ли число простым"""
+    """check if the number is prime"""
     result = []
     for i in range(1, number + 1):
         if number % i == 0:
             result.append(i)
-    return True if result == [1, number] else False
-
-
-def chec_answer(question, answer):
-    """проверка ответа"""
-    if question and answer == "yes" or not question and answer == "no":
-        return True
-    elif not question and answer == "yes" or question and answer == "no":
-        return False
+    return "yes" if result == [1, number] else "no"
 
 
 def is_even(value):
-    """проверка на четность"""
-    return not bool(value % 2)
+    """parity check"""
+    return "yes" if value % 2 == 0 else "no"
+
+
+def game_engine(question, rite_answer, name):
+    """game engine"""
+    MAX_COUNT = 3
+    count = 0
+    while count < MAX_COUNT:
+        print(f"Question: {question[count]}")
+        answer = prompt.string("Your answer: ")
+        if rite_answer[count] == answer:
+            print("Correct")
+            count += 1
+        else:
+            print(
+                f"'{answer}'is wrong answer ;(. Correct answer was "
+                f"'{rite_answer[count]}'.\nLet's try again, {name}!"
+            )
+            break
+    if count == MAX_COUNT:
+        print(f"Congratulations, {name}!")

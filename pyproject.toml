@@ -5,6 +5,7 @@ description = "The program contains 5 games"
 classifiers =[ 
     "Topic :: Software Development :: Build Tools",
     "Topic :: Software Development :: Libraries :: Python Modules"
+    "Topic :: GAMES/ENTERTAINMENT :: Puzzle Games"
 ]
 authors = ["Egor Kalinovskiy <gamebirbibi@yandex.ru>"]
 repository = "https://github.com/gamebir/python-project-49.git"
