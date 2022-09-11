@@ -8,7 +8,7 @@ src="https://api.codeclimate.com/v1/badges/3e4e3068f6e9e0933acf/maintainability"
 
 [№ 2 Игра: "Калькулятор"](https://asciinema.org/a/Q1qxAFdeVFLORccFL0dVWTHhf)
 
-[№ 3 Игра "НОД"](href="https://asciinema.org/a/doV2201d3fJnQ4vOAbzTSXzXZ)
+[№ 3 Игра "НОД"](https://asciinema.org/a/doV2201d3fJnQ4vOAbzTSXzXZ)
 
 [№ 4 Игра "Арифметическая прогрессия"](https://asciinema.org/a/TCwrRWjFG7ZtvgwjiuM4SDPGL)
 
