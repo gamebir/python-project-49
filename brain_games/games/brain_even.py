@@ -1,5 +1,10 @@
 from random import randint
-from brain_games.games_functions import game_engine, greeting, is_even
+from brain_games.games_functions import game_engine, greeting
+
+
+def is_even(value):
+    """parity check"""
+    return 'yes' if value % 2 == 0 else 'no'
 
 
 def brain_even():
