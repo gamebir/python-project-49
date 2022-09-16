@@ -1,6 +1,7 @@
 import prompt
 MAX_COUNT = 3
 
+
 def greeting():
     """greeting"""
     print('Welcome to the Brain Games!')
@@ -13,7 +14,7 @@ def game_engine(question, rite_answer, name):
     """game engine"""
     max_count = MAX_COUNT
     count = 0
-    while count < MAX_COUNT:
+    while count < max_count:
         print(f'Question: {question[count]}')
         answer = prompt.string('Your answer: ')
         if rite_answer[count] == answer:
