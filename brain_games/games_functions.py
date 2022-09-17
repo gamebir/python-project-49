@@ -1,7 +1,6 @@
 import prompt
 MAX_COUNT = 3
 
-
 def greeting():
     """greeting"""
     print('Welcome to the Brain Games!')
@@ -10,9 +9,10 @@ def greeting():
     return name
 
 
-def game_engine(question, rite_answer, name):
+def game_engine(question, rite_answer, task, max_count = MAX_COUNT):
     """game engine"""
-    max_count = MAX_COUNT
+    name = greeting()
+    print(task)
     count = 0
     while count < max_count:
         print(f'Question: {question[count]}')
