@@ -5,9 +5,11 @@ src="https://api.codeclimate.com/v1/badges/3e4e3068f6e9e0933acf/maintainability"
 
 >__The project contains 5 games__:
 
-[№ 1 "Parity Check"][![asciicast](https://asciinema.org/a/m5qqjlvXt8AQdJ1zezqifAGrf.svg)]
-[№ 2 "Calculator"][![asciicast](https://asciinema.org/a/Q1qxAFdeVFLORccFL0dVWTHhf.svg)]
-[№ 3 "Smallest Common Divisor"][![asciicast](https://asciinema.org/a/doV2201d3fJnQ4vOAbzTSXzXZ.svg)]
+[№ 1 "Parity Check"][![asciicast](https://asciinema.org/a/m5qqjlvXt8AQdJ1zezqifAGrf.svg)](https://asciinema.org/a/m5qqjlvXt8AQdJ1zezqifAGrf)
+
+[№ 2 "Calculator"][![asciicast](https://asciinema.org/a/Q1qxAFdeVFLORccFL0dVWTHhf.svg)](https://asciinema.org/a/Q1qxAFdeVFLORccFL0dVWTHhf)
+
+[№ 3 "Smallest Common Divisor"][![asciicast](https://asciinema.org/a/doV2201d3fJnQ4vOAbzTSXzXZ.svg)](https://asciinema.org/a/doV2201d3fJnQ4vOAbzTSXzXZ)
 
 [№ 4 "Arithmetic Progression"][![asciicast](https://asciinema.org/a/TCwrRWjFG7ZtvgwjiuM4SDPGL.svg)](https://asciinema.org/a/TCwrRWjFG7ZtvgwjiuM4SDPGL)
 
