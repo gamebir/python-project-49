@@ -16,7 +16,7 @@ def gen_prog():
     return result
 
 
-def brain_progr():
+def brain_progression():
     task = 'What number is missing in the progression?'
     question = ''
     correct_answer = ''
