@@ -11,7 +11,8 @@ src="https://api.codeclimate.com/v1/badges/3e4e3068f6e9e0933acf/maintainability"
 
 [№ 3 "Smallest Common Divisor"][![asciicast](https://asciinema.org/a/doV2201d3fJnQ4vOAbzTSXzXZ.svg)](https://asciinema.org/a/doV2201d3fJnQ4vOAbzTSXzXZ)
 
-[№ 4 "Arithmetic Progression"][![asciicast](https://asciinema.org/a/TCwrRWjFG7ZtvgwjiuM4SDPGL.svg)](https://asciinema.org/a/TCwrRWjFG7ZtvgwjiuM4SDPGL)
+№ 4 "Arithmetic Progression"
+[![asciicast](https://asciinema.org/a/TCwrRWjFG7ZtvgwjiuM4SDPGL.svg)](https://asciinema.org/a/TCwrRWjFG7ZtvgwjiuM4SDPGL)
 
 № 5 "Is Prime Number?"
 [![asciicast](https://asciinema.org/a/zfGnMTgdSzxq9IhHFoucF1i7M.svg)](https://asciinema.org/a/zfGnMTgdSzxq9IhHFoucF1i7M)
