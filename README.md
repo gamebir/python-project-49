@@ -5,9 +5,9 @@ src="https://api.codeclimate.com/v1/badges/3e4e3068f6e9e0933acf/maintainability"
 
 >__Проект содержит 5 игр__:
 
-[№ 1 Игра: "Проверка на чётность"](https://asciinema.org/a/m5qqjlvXt8AQdJ1zezqifAGrf)
+[№ 1 Игра: "Проверка на чётность"]((https://asciinema.org/a/m5qqjlvXt8AQdJ1zezqifAGrf.svg)](https://asciinema.org/a/m5qqjlvXt8AQdJ1zezqifAGrf))
 
-[№ 2 Игра: "Калькулятор"](https://asciinema.org/a/Q1qxAFdeVFLORccFL0dVWTHhf)
+[№ 2 Игра: "Калькулятор"]((https://asciinema.org/a/Q1qxAFdeVFLORccFL0dVWTHhf.svg)](https://asciinema.org/a/Q1qxAFdeVFLORccFL0dVWTHhf))
 
 [№ 3 Игра "НОД"](https://asciinema.org/a/doV2201d3fJnQ4vOAbzTSXzXZ)
 

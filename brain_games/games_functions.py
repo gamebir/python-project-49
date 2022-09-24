@@ -9,7 +9,7 @@ def game_engine(funk):
     print(f'Hello, {name}')
     _, _, task = funk()
     print(task)
-    max_attempts=MAX_ATTEMPTS
+    max_attempts = MAX_ATTEMPTS
     atempt = 0
     while atempt < max_attempts:
         question, correct_answer, _ = funk()

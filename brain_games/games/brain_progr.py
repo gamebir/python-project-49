@@ -8,7 +8,7 @@ PROGR_LENGHT = 10
 
 def gen_prog():
     """generating a sequence"""
-    step = randint(BEGIN_RANGE,END_RANGE)
+    step = randint(BEGIN_RANGE, END_RANGE)
     result = ''
     n = randint(BEGIN_RANGE_2, END_RANGE_2)
     for i in range(n, n + (step * PROGR_LENGHT), step):
@@ -25,4 +25,3 @@ def brain_progr():
     question = progression.replace(symbol, '..')
     correct_answer = symbol
     return question, correct_answer, task
-print(gen_prog())
