@@ -3,7 +3,7 @@ Hexlet tests and linter status: [![Actions Status](https://github.com/gamebir/py
  Cocde climat:<a href="https://codeclimate.com/github/gamebir/python-project-49/maintainability"><img
 src="https://api.codeclimate.com/v1/badges/3e4e3068f6e9e0933acf/maintainability" /></a>
 
->__The project contains 5 games__:
+    >__The project contains 5 games__:
 
     № 1 "Parity Check"
 [![asciicast](https://asciinema.org/a/m5qqjlvXt8AQdJ1zezqifAGrf.svg)](https://asciinema.org/a/m5qqjlvXt8AQdJ1zezqifAGrf)
