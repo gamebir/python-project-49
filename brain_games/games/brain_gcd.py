@@ -11,5 +11,5 @@ def brain_gcd():
     number1 = randint(BEGIN_RANGE, END_RANGE)
     number2 = randint(BEGIN_RANGE, END_RANGE)
     question = f'{number1} {number2}'
-    correct_answer = gcd(number1, number2)
+    correct_answer = str(gcd(number1, number2))
     return question, correct_answer, task
