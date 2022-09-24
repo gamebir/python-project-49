@@ -5,7 +5,7 @@ src="https://api.codeclimate.com/v1/badges/3e4e3068f6e9e0933acf/maintainability"
 
 >__The project contains 5 games__:
 
-[№ 1 "Parity Check"][![asciicast](https://asciinema.org/a/m5qqjlvXt8AQdJ1zezqifAGrf.svg)]
+№ 1 "Parity Check"[![asciicast](https://asciinema.org/a/m5qqjlvXt8AQdJ1zezqifAGrf.svg)
 
 [№ 2 "Calculator"][![asciicast](https://asciinema.org/a/Q1qxAFdeVFLORccFL0dVWTHhf.svg)]
 
