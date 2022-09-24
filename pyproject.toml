@@ -27,7 +27,7 @@ brain-prime = "brain_games.scripts.brain_prime:main"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^5.0.4"
-black = {version = "^22.6.0", allow-prereleases = true}
+
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
