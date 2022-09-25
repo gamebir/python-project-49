@@ -1,6 +1,7 @@
 from random import randint
 BEGIN_RANGE = 1
 END_RANGE = 223
+TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime_number(number):
@@ -13,12 +14,13 @@ def is_prime_number(number):
 
 
 def brain_prime():
-    task = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    begin_range = BEGIN_RANGE
+    end_range = END_RANGE
     question = ''
     correct_answer = ''
-    question = randint(BEGIN_RANGE, END_RANGE)
+    question = randint(begin_range, end_range)
     if is_prime_number(question):
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
-    return question, correct_answer, task
+    return question, correct_answer

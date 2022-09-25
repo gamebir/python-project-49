@@ -1,27 +1,29 @@
 from random import randint, choice
 BEGIN_RANGE = 1
 END_RANGE = 10
+TASK = 'What is the result of the expression?'
 
 
-def math_action(number1, number2, oper):
+def math_action(first_value, second_value, operator):
     """assign a mathematical operation to the symbol"""
     operation_result = 0
-    if oper == '+':
-        operation_result = number1 + number2
-    elif oper == '-':
-        operation_result = number1 - number2
-    elif oper == '*':
-        operation_result = number1 * number2
+    if operator == '+':
+        operation_result = first_value + second_value
+    elif operator == '-':
+        operation_result = first_value - second_value
+    elif operator == '*':
+        operation_result = first_value * second_value
     return operation_result
 
 
 def brain_calc():
-    task = 'What is the result of the expression?'
+    begin_range = BEGIN_RANGE
+    end_range = END_RANGE
     question = ''
     correct_answer = ''
-    oper = choice(['+', '-', '*'])
-    number1 = randint(BEGIN_RANGE, END_RANGE)
-    number2 = randint(BEGIN_RANGE, END_RANGE)
-    question = (f'{number1} {oper} {number2}')
-    correct_answer = (str(math_action(number1, number2, oper)))
-    return question, correct_answer, task
+    operator = choice(['+', '-', '*'])
+    first_value = randint(begin_range, end_range)
+    second_value = randint(begin_range, end_range)
+    question = (f'{first_value} {operator} {second_value}')
+    correct_answer = (str(math_action(first_value, second_value, operator)))
+    return question, correct_answer
