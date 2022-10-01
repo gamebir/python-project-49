@@ -33,7 +33,7 @@ go to the python-projeck-49 directory:
 cd python-projeck-49 
 ```
 
-instal:
+install:
 
 ```bash
 python3 -m pip install --user dist/*.whl
