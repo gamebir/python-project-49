@@ -2,15 +2,15 @@ import prompt
 MAX_ATTEMPTS = 3
 
 
-def game_engine(games, TASK):
+def game_engine(game, TASK):
     """game engine"""
     print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name?\n')
+    name = prompt.string('May I have your name?')
     print(f'Hello, {name}')
     print(TASK)
     atempt = 0
     while atempt < MAX_ATTEMPTS:
-        question, correct_answer = games()
+        question, correct_answer = game()
         print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
         if correct_answer == answer:
