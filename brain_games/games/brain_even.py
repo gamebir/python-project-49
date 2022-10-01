@@ -1,7 +1,7 @@
 from random import randint
 
 
-BEGIN_RANGE = 1
+BEGIN_RANGE = 2
 END_RANGE = 10
 TASK = 'Answer "yes" if the number is even, otherwise answer "no".'
 
