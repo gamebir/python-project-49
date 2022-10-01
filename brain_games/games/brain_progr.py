@@ -1,31 +1,24 @@
 from random import choice, randint
-BEGIN_RANGE = 2
-END_RANGE = 10
-BEGIN_RANGE_2 = 0
-END_RANGE_2 = 100
-PROGR_LENGHT = 10
+
+
+BEGIN_RANGE = 0
+END_RANGE = 100
+STEP_PROGR = 3
+LEGHT_PROGR = 10
 TASK = 'What number is missing in the progression?'
 
 
-def gen_prog():
+def generate_progression(step_progr, leght_progr):
     """generating a sequence"""
-    begin_range = BEGIN_RANGE
-    end_range = END_RANGE
-    begin_range_2 = BEGIN_RANGE_2
-    end_range_2 = END_RANGE_2
-    progr_lenght = PROGR_LENGHT
-    step = randint(begin_range, end_range)
     result = ''
-    n = randint(begin_range_2, end_range_2)
-    for i in range(n, n + (step * progr_lenght), step):
+    n = randint(BEGIN_RANGE, END_RANGE)
+    for i in range(n, n + (step_progr * leght_progr), step_progr):
         result += f'{i} '
     return result
 
 
 def brain_progression():
-    question = ''
-    correct_answer = ''
-    progression = gen_prog()
+    progression = generate_progression(STEP_PROGR, LEGHT_PROGR)
     symbol = choice(progression.split())
     question = progression.replace(symbol, '..')
     correct_answer = symbol

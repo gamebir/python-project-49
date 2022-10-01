@@ -1,4 +1,6 @@
 from random import randint, choice
+
+
 BEGIN_RANGE = 1
 END_RANGE = 10
 TASK = 'What is the result of the expression?'
@@ -17,13 +19,9 @@ def math_action(first_value, second_value, operator):
 
 
 def brain_calc():
-    begin_range = BEGIN_RANGE
-    end_range = END_RANGE
-    question = ''
-    correct_answer = ''
     operator = choice(['+', '-', '*'])
-    first_value = randint(begin_range, end_range)
-    second_value = randint(begin_range, end_range)
+    first_value = randint(BEGIN_RANGE, END_RANGE)
+    second_value = randint(BEGIN_RANGE, END_RANGE)
     question = (f'{first_value} {operator} {second_value}')
     correct_answer = (str(math_action(first_value, second_value, operator)))
     return question, correct_answer

@@ -2,32 +2,6 @@ import prompt
 MAX_ATTEMPTS = 3
 
 
-# def game_engine(games):
-#     """game engine"""
-#     print('Welcome to the Brain Games!')
-#     name = prompt.string('May I have your name?\n')
-#     print(f'Hello, {name}')
-#     _, _, task = games()
-#     print(task)
-#     max_attempts = MAX_ATTEMPTS
-#     atempt = 0
-#     while atempt < max_attempts:
-#         question, correct_answer, _ = games()
-#         print(f'Question: {question}')
-#         answer = prompt.string('Your answer: ')
-#         if correct_answer == answer:
-#             print('Correct')
-#             atempt += 1
-#         else:
-#             print(
-#                 f"'{answer}'is wrong answer ;(. Correct answer was "
-#                 f"'{correct_answer}'.\nLet's try again, {name}!"
-#             )
-#             break
-#     if atempt == max_attempts:
-#         print(f'Congratulations, {name}!')
-
-
 def game_engine(games, TASK):
     """game engine"""
     print('Welcome to the Brain Games!')
@@ -35,9 +9,8 @@ def game_engine(games, TASK):
     print(f'Hello, {name}')
     task = TASK
     print(task)
-    max_attempts = MAX_ATTEMPTS
     atempt = 0
-    while atempt < max_attempts:
+    while atempt < MAX_ATTEMPTS:
         question, correct_answer = games()
         print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
@@ -50,5 +23,5 @@ def game_engine(games, TASK):
                 f"'{correct_answer}'.\nLet's try again, {name}!"
             )
             break
-    if atempt == max_attempts:
+    if atempt == MAX_ATTEMPTS:
         print(f'Congratulations, {name}!')
