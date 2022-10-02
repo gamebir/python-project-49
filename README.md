@@ -20,7 +20,7 @@ src="https://api.codeclimate.com/v1/badges/3e4e3068f6e9e0933acf/maintainability"
 ## № 5 "Is Prime Number?"
 [![asciicast](https://asciinema.org/a/zfGnMTgdSzxq9IhHFoucF1i7M.svg)](https://asciinema.org/a/zfGnMTgdSzxq9IhHFoucF1i7M)
 
-                            Installation Instructions
+## Installation Instructions
 clone a repository:
 
 ```bash
