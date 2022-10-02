@@ -5,7 +5,7 @@ MAX_ATTEMPTS = 3
 def game_engine(game, TASK):
     """game engine"""
     print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name?')
+    name = prompt.string('May I have your name?\n')
     print(f'Hello, {name}')
     print(TASK)
     atempt = 0
