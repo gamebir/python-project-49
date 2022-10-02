@@ -6,7 +6,7 @@ END_RANGE = 10
 TASK = 'What is the result of the expression?'
 
 
-def math_action(first_value, second_value, operator):
+def get_math_action(first_value, second_value, operator):
     """assign a mathematical operation to the symbol"""
     operation_result = 0
     if operator == '+':
@@ -23,5 +23,5 @@ def brain_calc():
     first_value = randint(BEGIN_RANGE, END_RANGE)
     second_value = randint(BEGIN_RANGE, END_RANGE)
     question = (f'{first_value} {operator} {second_value}')
-    correct_answer = (str(math_action(first_value, second_value, operator)))
+    correct_answer = (str(get_math_action(first_value, second_value, operator)))
     return question, correct_answer
