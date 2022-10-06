@@ -22,6 +22,6 @@ def brain_calc():
     operator = choice(['+', '-', '*'])
     first_value = randint(BEGIN_RANGE, END_RANGE)
     second_value = randint(BEGIN_RANGE, END_RANGE)
-    question = (f'{first_value} {operator} {second_value}')
-    correct_answer = (str(get_math_action(first_value, second_value, operator)))
+    question = f'{first_value} {operator} {second_value}'
+    correct_answer = str(get_math_action(first_value, second_value, operator))
     return question, correct_answer

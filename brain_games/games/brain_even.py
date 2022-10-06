@@ -13,5 +13,5 @@ def is_even(value):
 
 def brain_even():
     question = randint(BEGIN_RANGE, END_RANGE)
-    correct_answer = (is_even(question))
+    correct_answer = is_even(question)
     return question, correct_answer
