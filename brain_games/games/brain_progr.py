@@ -7,7 +7,7 @@ BEGIN_STEP = 3
 END_STEP = 10
 BEGIN_LENGHT = 10
 END_LENGHT = 20
-TASK = 'What number is missing in the progression?'
+TASK = "What number is missing in the progression?"
 
 
 def generate_progression(step_progr, lenght_progr):
@@ -20,7 +20,9 @@ def generate_progression(step_progr, lenght_progr):
 
 
 def brain_progression():
-    progression = generate_progression(randint(BEGIN_STEP, END_STEP), randint(BEGIN_LENGHT, END_LENGHT))
+    progression = generate_progression(
+        randint(BEGIN_STEP, END_STEP), randint(BEGIN_LENGHT, END_LENGHT)
+    )
     symbol = choice(progression.split())
     question = progression.replace(symbol, '..')
     correct_answer = symbol
