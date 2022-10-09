@@ -11,7 +11,7 @@ def is_even(value):
     return 'yes' if value % 2 == 0 else 'no'
 
 
-def brain_even():
+def get_question_correct_answer():
     question = randint(BEGIN_RANGE, END_RANGE)
     correct_answer = is_even(question)
     return question, correct_answer

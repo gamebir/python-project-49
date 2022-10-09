@@ -16,7 +16,7 @@ def is_prime_number(value):
     return number * number > value
 
 
-def brain_prime():
+def get_question_correct_answer():
     question = randint(BEGIN_RANGE, END_RANGE)
     if is_prime_number(question):
         correct_answer = 'yes'

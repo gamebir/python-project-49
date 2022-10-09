@@ -7,7 +7,7 @@ END_RANGE = 100
 TASK = 'Find the greatest common divisor of given numbers.'
 
 
-def brain_gcd():
+def bget_question_correct_answer():
     first_value = randint(BEGIN_RANGE, END_RANGE)
     second_value = randint(BEGIN_RANGE, END_RANGE)
     question = f'{first_value} {second_value}'

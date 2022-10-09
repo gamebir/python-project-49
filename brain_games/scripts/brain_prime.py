@@ -4,7 +4,7 @@ from brain_games.games_functions import engine_play
 
 
 def main():
-    engine_play(brain_prime.brain_prime, brain_prime.TASK)
+    engine_play(brain_prime)
 
 
 if __name__ == "__main__":

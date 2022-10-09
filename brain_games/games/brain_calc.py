@@ -18,7 +18,7 @@ def get_math_action(first_value, second_value, operator):
     return operation_result
 
 
-def brain_calc():
+def get_question_correct_answer():
     operator = choice(['+', '-', '*'])
     first_value = randint(BEGIN_RANGE, END_RANGE)
     second_value = randint(BEGIN_RANGE, END_RANGE)
