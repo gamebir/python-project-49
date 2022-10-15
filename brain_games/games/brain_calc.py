@@ -9,12 +9,14 @@ TASK = 'What is the result of the expression?'
 def get_math_action(first_value, second_value, operator):
     """assign a mathematical operation to the symbol"""
     operation_result = 0
+
     if operator == '+':
         operation_result = first_value + second_value
     elif operator == '-':
         operation_result = first_value - second_value
     elif operator == '*':
         operation_result = first_value * second_value
+
     return operation_result
 
 

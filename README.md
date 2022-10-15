@@ -36,5 +36,13 @@ cd python-projeck-49
 install:
 
 ```bash
-python3 -m pip install --user dist/*.whl
+make install
+```
+
+```bash
+make build
+```
+
+```bash
+make package-install
 ```

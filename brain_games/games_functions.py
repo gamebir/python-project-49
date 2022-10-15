@@ -24,7 +24,6 @@ def engine_play(game):
                 f"'{answer}'is wrong answer ;(. Correct answer was "
                 f"'{correct_answer}'.\nLet's try again, {name}!"
             )
-            break
+            return
 
-    if atempt == MAX_ATTEMPTS:
         print(f'Congratulations, {name}!')
