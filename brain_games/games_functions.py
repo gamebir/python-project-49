@@ -9,16 +9,16 @@ def engine_play(game):
     name = prompt.string('May I have your name?\n')
     print(f'Hello, {name}')
     print(game.TASK)
-    atempt = 0
+    attempt = 0
 
-    while atempt < MAX_ATTEMPTS:
+    while attempt < MAX_ATTEMPTS:
         question, correct_answer = game.get_question_correct_answer()
         print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
 
         if correct_answer == answer:
             print('Correct !')
-            atempt += 1
+            attempt += 1
         else:
             print(
                 f"'{answer}'is wrong answer ;(. Correct answer was "
@@ -26,4 +26,4 @@ def engine_play(game):
             )
             return
 
-        print(f'Congratulations, {name}!')
+    print(f'Congratulations, {name}!')

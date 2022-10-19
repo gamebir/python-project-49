@@ -6,7 +6,7 @@ BEGIN_STEP = 3
 END_STEP = 10
 BEGIN_LENGTH = 10
 END_LENGTH = 20
-TASK = "What number is missing in the progression?"
+TASK = 'What number is missing in the progression?'
 
 
 def generate_progression(begin, step, length):
